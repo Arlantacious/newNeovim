@@ -1,5 +1,4 @@
-local M = 
-{
-    "madyanov/gruber.vim",
+local M = {
+  "phha/zenburn.nvim",
 }
 return M
