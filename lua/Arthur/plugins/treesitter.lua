@@ -1,10 +1,17 @@
-require("nvim-treesitter.configs").setup({
+return {
 
-        ensure_installed = { "vimdoc, lua, python, java, c, cpp, go, asm"},
+	"nvim-treesitter/nvim-treesitter",
+	build = ":TSUpdate",
+	config = function()
+		require("nvim-treesitter.configs").setup({
 
-        sync_install = false,
-        auto_install = true,
-        highlight  = {
-                enable = true
-        }
-})
+			ensure_installed = { "vimdoc, lua, python, java, c, cpp, go, asm"},
+
+			sync_install = false,
+			auto_install = true,
+			highlight  = {
+				enable = true
+			}
+		})
+	end
+}
