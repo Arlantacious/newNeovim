@@ -1,4 +1,3 @@
-require("config.options")
 require("core.lazy")
 
 vim.g.loaded_netrw = 1
