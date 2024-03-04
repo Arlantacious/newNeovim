@@ -31,3 +31,4 @@ require("lazy").setup("Arthur.plugins",
 	},
 	debug = false,
 })
+vim.cmd.colorscheme("rose-pine")
