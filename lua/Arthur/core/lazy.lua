@@ -6,7 +6,7 @@ if not vim.loop.fs_stat(lazypath) then
     "clone",
     "--filter=blob:none",
     "https://github.com/folke/lazy.nvim.git",
-    "--branch=stable", -- latest stable release
+    "--branch=stable",
     lazypath,
   })
 end
@@ -21,13 +21,15 @@ require("lazy").setup("Arthur.plugins",
 		}
 	},
 	defaults = {
-		lazy = true
+		lazy = false
 	},
 	ui = {
 		border = "rounded"
 	},
 	checker = {
-		enabled = true
+		enabled = false
 	},
 	debug = false,
 })
+vim.cmd.colorscheme("rose-pine")
+
