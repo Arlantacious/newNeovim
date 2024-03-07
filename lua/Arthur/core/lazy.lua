@@ -21,7 +21,7 @@ require("lazy").setup("Arthur.plugins",
 		}
 	},
 	defaults = {
-		lazy = true
+		lazy = false
 	},
 	ui = {
 		border = "rounded"
