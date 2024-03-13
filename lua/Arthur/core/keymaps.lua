@@ -21,3 +21,5 @@ vim.keymap.set({ "i", "v", "n" }, "<C-M-q>", "<cmd>qa!<cr>", { desc = "Exit Vim"
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "<leader>f", "za")
+vim.api.nvim_set_keymap('n', '<Tab>', [[:lua SwitchToPreviousBuffer()<CR>]], { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<CR>', [[:lua SwitchToNextBuffer()<CR>]], { noremap = true, silent = true })
